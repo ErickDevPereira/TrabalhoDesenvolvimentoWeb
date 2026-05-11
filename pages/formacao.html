@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../style/navigation.css" rel = "stylesheet">
+    <link href = "../style/style.css" rel = "stylesheet">
+    <title>Formação</title>
+</head>
+<body onresize = "correctBug()">
+    <header>
+        <div id = "hamburger" onclick = "toggleHamburguer()"></div>
+        <nav id = "menu">
+            <ul id = "container">
+                <li onclick = "redirect('sobre')">sobre mim</li>
+                <li onclick = "redirect('portifolio')">portifólio</li>
+                <li onclick = "redirect('formacao')">formação</li>
+                <li onclick = "redirect('contato')">contato</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Formação</h1>
+    <section class = "edit-sec">
+        <h2>Python - Curso em Vídeo</h2>
+        <p class = "info">
+            Concluí, com êxito, os 3 módulos do curso de Python da plataforma Curso em Vídeo, acumulando 120 horas de curso no Total.
+        </p>
+    </section>
+    <section class = "edit-sec">
+        <h2>MySQL - Curso em Vídeo</h2>
+        <p class = "info">
+            Concluí, com êxito, o curso de MySQL do curso em vídeo, o qual me forneceu uma boa base de banco de dados relacional e SQL. O curso teve uma duração de 40h.
+        </p>
+    </section>
+    <section class = "edit-sec">
+        <h2>Git e Github - Uninter</h2>
+        <p class = "info">
+            Concluí, com êxito, o curso de Git e Github - versionamento e compartilhamento de códigos da Uninter, o qual me deu uma base para versionamento de códigos e projetos pelo git. O curso teve uma duração de 20h.
+        </p>
+    </section>
+    <section class = "edit-sec">
+        <h2>Python orientado a objetos - Uninter</h2>
+        <p class = "info">
+            Concluí, com êxito, o curso de Python Orientado a Objetos da Uninter, o qual ampliou meus conhecimentos de Programação Orientada a Objetos e Python. O curso teve uma duração de 20h.
+        </p>
+    </section>
+    <script src = "../interaction/hamburguer.js"></script>
+    <script src = "../interaction/redirection.js"></script>
+</body>
+</html>

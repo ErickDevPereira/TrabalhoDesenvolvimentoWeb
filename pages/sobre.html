@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../style/navigation.css" rel = "stylesheet">
+    <link href = "../style/style.css" rel = "stylesheet">
+    <title>Sobre mim</title>
+</head>
+<body onresize = "correctBug()">
+    <header>
+        <div id = "hamburger" onclick = "toggleHamburguer()"></div>
+        <nav id = "menu">
+            <ul id = "container">
+                <li onclick = "redirect('sobre')">sobre mim</li>
+                <li onclick = "redirect('portifolio')">portifólio</li>
+                <li onclick = "redirect('formacao')">formação</li>
+                <li onclick = "redirect('contato')">contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Erick Pereira</h1>
+        <section class = "edit-sec">
+            <h2>Quem sou eu?</h2>
+            <p class = "info">
+                Sou um backend developer em formação e estudante do terceiro período do curso de Ciência da Computação do Centro Universitário Internacional (UNINTER).
+            Meu foco é na construção de serviços e APIs robustas, com otimização de processos.
+            </p>
+        </section>
+        <section class = "edit-sec">
+            <h2>Tecnologias que domino</h2>
+            <p class = "info">
+                Tenho e estou desenvolvendo projetos com Python e Flask para backend, Pandas, Numpy e matplotlib como bibliotecas para trabalhar com dados, MySQL e SQL para banco de dados relacional,
+            HTML, CSS e JavaScript para o consumo e apresentação desses dados no frontend.
+            </p>
+        </section>
+        <section class = "edit-sec">
+            <h2>Hobbies</h2>
+            <ul>
+                <li class = "hobby">&#127760; Aprender novos idiomas</li>
+                <li class = "hobby">&#127947; Musculação</li>
+                <li class = "hobby">&#127919; Jogar Counter Strike</li>
+            </ul>
+        </section>
+    </main>
+    <script src = "../interaction/hamburguer.js"></script>
+    <script src = "../interaction/redirection.js"></script>
+</body>
+</html>

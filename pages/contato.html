@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "../style/navigation.css" rel = "stylesheet">
+    <link href = "../style/style.css" rel = "stylesheet">
+    <title>Contato</title>
+</head>
+<body onresize = "correctBug()">
+    <header>
+        <div id = "hamburger" onclick = "toggleHamburguer()"></div>
+        <nav id = "menu">
+            <ul id = "container">
+                <li onclick = "redirect('sobre')">sobre mim</li>
+                <li onclick = "redirect('portifolio')">portifólio</li>
+                <li onclick = "redirect('formacao')">formação</li>
+                <li onclick = "redirect('contato')">contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contato</h1>
+        <section class = "edit-sec">
+            <form>
+                <label for = "inome">Nome</label>
+                <br>
+                <input type = "text" name = "nome" id ="inome" required>
+                <br>
+                <label for = "inome">Email</label>
+                <br>
+                <input type = "text" name = "email" id ="iemail" required>
+                <br>
+                <label for = "inome">Mensagem</label>
+                <br>
+                <textarea id = "txt" rows = "5" required></textarea>
+                <input type = "submit" id = "isub" value = "Enviar"></textarea>
+            </form>
+            <p id = "err-msg"></p>
+        </section>
+    </main>
+    <div id = "modal">
+        <p id = "gen-msg">Mensagem enviada com sucesso</p>
+        <div id = "close" onclick = "toggleModal(false)"></div>
+        <p id = "nome-msg">Nome: </p>
+        <p id = "email-msg">Email: </p>
+    </div>
+    <script src = "../interaction/hamburguer.js"></script>
+    <script src = "../interaction/redirection.js"></script>
+    <script src = "../interaction/form.js" type = "module"></script>
+    <script src = "../interaction/modal.js" type = "module"></script>
+</body>
+</html>
