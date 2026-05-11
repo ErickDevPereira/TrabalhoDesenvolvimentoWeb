@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href = "../style/navigation.css" rel = "stylesheet">
-    <link href = "../style/style.css" rel = "stylesheet">
+    <link href = "./style/navigation.css" rel = "stylesheet">
+    <link href = "./style/style.css" rel = "stylesheet">
     <title>Portifólio</title>
 </head>
 <body onresize = "correctBug()">
@@ -12,7 +12,7 @@
         <div id = "hamburger" onclick = "toggleHamburguer()"></div>
         <nav id = "menu">
             <ul id = "container">
-                <li onclick = "redirect('sobre')">sobre mim</li>
+                <li onclick = "redirect('index')">sobre mim</li>
                 <li onclick = "redirect('portifolio')">portifólio</li>
                 <li onclick = "redirect('formacao')">formação</li>
                 <li onclick = "redirect('contato')">contato</li>
@@ -45,7 +45,7 @@
         </p>
         <p class = "info">Click <a href = "https://github.com/ErickDevPereira/MoviesDBWeb">aqui</a> para acessar o repositório do projeto</p>
     </section>
-    <script src = "../interaction/hamburguer.js"></script>
-    <script src = "../interaction/redirection.js"></script>
+    <script src = "./interaction/hamburguer.js"></script>
+    <script src = "./interaction/redirection.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 function redirect(htmlName) {
-    path = "../pages/" + htmlName + ".html"
+    path = "./" + htmlName + ".html"
     console.log(path);
     window.location.href = path;
 }
